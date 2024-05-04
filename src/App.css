@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,281 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.black-background {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: white; 
+  padding: 20px; 
 }
+
+.container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 700px;
+}
+
+.content {
+  display: flex;
+}
+
+.image {
+  max-width: 200px; 
+  max-height: 200px; 
+}
+
+.text {
+  margin-left: 20px; 
+}
+
+.text h3 {
+  color: rgb(236, 175, 61);
+  font-size: 38px; 
+  font-weight: bolder;
+}
+
+.container2 {
+  display: flex;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+}
+
+.text2 h3 {
+  margin-top: -550px;
+  margin-left:130px;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.text3 h3{
+  margin-left:-300px;
+  margin-top: -240px;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+/* .image-with-text {
+  position: relative;
+  display: inline-block;
+} */
+
+.image-container {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+  margin-top: -530px;
+  margin-left: -250px;
+}
+
+.image-slider {
+  display: flex;
+  animation: slideImages 20s linear infinite; 
+}
+
+.image2,
+.image3,
+.image4,
+.image5 {
+  width: 600px;
+  height: 650px;
+  margin-right: 40px;
+}
+
+@keyframes slideImages {
+  0%, 10% {
+    transform: translateX(0); 
+  }
+  12%, 22% {
+    transform: translateX(-300px); 
+  }
+  24%, 34% {
+    transform: translateX(-800px); 
+  }
+  36%, 46% {
+    transform: translateX(-1400px); 
+  }
+  48%, 58% {
+    transform: translateX(0px); 
+  }
+  60%, 70% {
+    transform: translateX(-300px); 
+  }
+  72%, 82% {
+    transform: translateX(-800px); 
+  }
+  84%, 94% {
+    transform: translateX(-1200px); 
+  }
+  96%, 100% {
+    transform: translateX(0px); 
+  }
+}
+
+/* .overlay-text {
+  position: absolute;
+  top: 10px; 
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+.rectangle {
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  width: 70px; 
+  height: 1020px; 
+  background-color: #9e79d8;
+  left: 880px;
+}
+
+@keyframes moveText {
+  0% {
+    top: 80%; 
+  }
+  100% {
+    top: 50%; 
+  }
+}
+
+.overlay-text {
+  position: absolute;
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%) rotate(90deg);
+  color: black;
+  font-size: 26px; 
+  white-space: nowrap; 
+  animation: moveText 5s linear infinite; 
+}
+
+.container3{
+  display:flex;
+}
+
+.text4 h4{
+  margin-top:-800px;
+  margin-left:1000px;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.text5 h1{
+  margin-left:-270px;
+  font-size: 50px;
+  margin-top:-650px;
+  font-weight: bold;
+}
+
+.text6 h4{
+  margin-top:-570px;
+  margin-left:-270px;
+}
+
+.text7 h5{
+  margin-top:-520px;
+  margin-left:-270px;
+}
+
+.image-container2 {
+  position: relative;
+  width: 5px; 
+  height: 5px; 
+  border-radius: 50%; 
+}
+
+.image6 {
+  position: absolute;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  margin-top:-390px;
+  margin-left:1000px;
+}
+
+.image7 {
+  position: absolute;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  margin-top:-390px;
+  margin-left:1025px;
+}
+
+.image8 {
+  position: absolute;
+  width: 43px; 
+  height: 43px; 
+  border-radius: 50%; 
+  margin-top:-390px;
+  margin-left:1050px;
+}
+
+.image9 {
+  position: absolute;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  margin-top:-390px;
+  margin-left:1075px;
+}
+
+.image10 {
+  position: absolute;
+  width: 43px; 
+  height: 43px; 
+  border-radius: 50%; 
+  margin-top:-390px;
+  margin-left:1099px;
+}
+
+.text8 h5{
+  margin-left:1170px;
+  margin-top:-390px;
+}
+
+.text9 h6{
+  margin-top:-300px;
+  margin-left:-370px;
+}
+
+.image11{
+  margin-left:1000px;
+  margin-top:-250px;
+  height:300px;
+}
+
+.image12{
+  margin-left:1190px;
+  margin-top:-325px;
+  height:300px;
+}
+
+.button {
+  width:180px;
+  height:50px;
+  margin-top:30px;
+  margin-left:1250px;
+  font-weight: bold;
+  background-color: rgb(236, 175, 61);
+  color: black; 
+  padding: 10px 10px; 
+  border: none; 
+  border-radius: 50px;
+  cursor: pointer; 
+  font-size: 20px; 
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: rgb(242, 168, 31);
+}
+
+
+
+
+
